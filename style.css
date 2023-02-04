@@ -6,6 +6,16 @@
 
 :root {
   font-size: 62.5%;
+
+  --textColor-p: #E1E1E6;
+  --buttonColor-b: #02799D;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Roboto', sans-serif;
+  width: 100vw;
+  height: 100vh;
 }
 
 #app {
@@ -24,17 +34,17 @@ button {
   background-color: transparent;
   padding: 1.2rem 3.2rem;
   border-radius: 1rem;
-  border: white 2px solid;
-  color: white;
+  border: var(--textColor-p) 2px solid;
+  color: var(--textColor-p);
   cursor: pointer;
   text-transform: uppercase;
 }
 
-body {
-  font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
-
+button:hover {
+  background-color: var(--textColor-p);
+  color: var(--buttonColor-b);
 }
+
 
 nav {
   display: flex;
@@ -47,6 +57,7 @@ h1 {
   font-size: 5rem;
   font-family: 700;
   line-height: 6rem;
+  text-align: center;
 }
 
 p {
@@ -58,6 +69,21 @@ p {
 .message {
   display: grid;
   justify-items: start;
+}
+
+.message.page {
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas: 
+  "h1 img"
+  "p img";
+}
+
+h1{
+  grid-area: h1;
+}
+
+p {
+  grid-area: p;
 }
 
 .message h1 {
@@ -72,21 +98,31 @@ p {
 
 h1,
 p {
-  color: white;
+  color: var(--textColor-p);
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--textColor-p);
   cursor: pointer;
   padding: 0 1rem;
+  font-weight: 400;
+  font-size: 2.1rem;
+}
+
+a:focus {
+  font-size: 2.4rem;
+  font-weight: 700;
 }
 
 .background {
   position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   z-index: -1;
   width: 100vw;
   height: 100vh;
+  object-fit: fill;
 }
