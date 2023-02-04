@@ -6,4 +6,6 @@
 > - Orientação a objetos - JS
 > - Classes and More
 
-[SPA Universe](https://)
+[Wakatime](https://wakatime.com/@saulocatunda/projects/ftitiwearx?start=2023-01-22&end=2023-02-04)
+
+[SPA Universe](https://saulocatunda.github.io/SPA-Universe/)
