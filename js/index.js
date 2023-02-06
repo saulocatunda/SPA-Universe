@@ -4,7 +4,7 @@ const router = new Router()
 
 router.add('/', 'https://saulocatunda.github.io/SPA-Universe/pages/home')
 router.add(
-  '/SPA-Universe/pages/about',
+  '/SPA-Universe/about',
   'https://saulocatunda.github.io/SPA-Universe/pages/about'
 )
 router.add(
