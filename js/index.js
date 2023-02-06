@@ -4,15 +4,15 @@ const router = new Router()
 
 router.add('/', 'https://saulocatunda.github.io/SPA-Universe/pages/home')
 router.add(
-  '/pages/about',
+  '/SPA-Universe/pages/about',
   'https://saulocatunda.github.io/SPA-Universe/pages/about'
 )
 router.add(
-  '/pages/explore',
+  '/SPA-Universe/pages/explore',
   'https://saulocatunda.github.io/SPA-Universe/pages/explore'
 )
 router.add(
-  '/pages/404',
+  '/SPA-Universe/pages/404',
   'https://saulocatunda.github.io/SPA-Universe/pages/404'
 )
 
