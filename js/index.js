@@ -2,7 +2,7 @@ import { Router } from './routes.js'
 
 const router = new Router()
 
-router.add('/SPA-Universe/pages/home', 'https://saulocatunda.github.io/SPA-Universe/pages/home')
+router.add('/SPA-Universe/', 'https://saulocatunda.github.io/SPA-Universe/pages/home')
 router.add(
   '/SPA-Universe/pages/about',
   'https://saulocatunda.github.io/SPA-Universe/pages/about'
