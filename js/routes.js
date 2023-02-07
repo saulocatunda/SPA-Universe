@@ -15,8 +15,7 @@ export class Router {
 
   handle() {
     const { pathname } = window.location
-    const route =
-      this.routes[pathname] || this.routes['/SPA-Universe/pages/404']
+    const route = this.routes[pathname] || this.routes['/SPA-Universe/404']
     console.log(pathname)
     fetch(route)
       .then(data => data.text())
